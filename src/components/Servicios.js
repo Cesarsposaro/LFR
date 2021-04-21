@@ -20,7 +20,11 @@ const Servicios = () => {
         className="col-xs-12 col-md-3 col-lg-3 service-container"
         key={servicio.id}
       >
-        <img className="img-fluid" src={servicio.urlimg} />
+        <img
+          alt="imagen del servicio"
+          className="img-fluid"
+          src={servicio.urlimg}
+        />
         <br></br>
         <h5>{servicio.titulo}</h5>
         <br></br>

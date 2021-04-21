@@ -29,7 +29,11 @@ const About = () => {
           <br></br>
         </div>
         <div className="col-md-5 order-md-first mt-1">
-          <img className="imgbio" src={about.urlimg1} alt="..."></img>
+          <img
+            className="imgbio"
+            src={about.urlimg1}
+            alt="imagen de biografia"
+          ></img>
         </div>
       </div>
       <div className="row justify-content-center  align-items-center mt-5">
@@ -38,7 +42,11 @@ const About = () => {
           <br></br>
         </div>
         <div className="col-md-5 mt-1">
-          <img className="imgbio" src={about.urlimg2} alt="..."></img>
+          <img
+            className="imgbio"
+            src={about.urlimg2}
+            alt="imagen de biografia"
+          ></img>
         </div>
       </div>
     </div>

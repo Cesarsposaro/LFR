@@ -40,7 +40,11 @@ const Trabajos = (onMoreInfoClick) => {
               className="col-xs-12 col-md-    6 col-lg-6"
               style={{ textAlign: "center" }}
             >
-              <img className="img-fluid" src={discos[ind].urlcover} />
+              <img
+                alt="album cover"
+                className="img-fluid"
+                src={discos[ind].urlcover}
+              />
             </div>
             {/*end of col*/}
             <div className="col-xs-12 col-md-6 col-lg-6 disc-container">
