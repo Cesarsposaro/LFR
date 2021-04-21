@@ -1,0 +1,29 @@
+.card-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.service-container {
+  display: flex;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  border: solid 1px rgba(175, 174, 174, 0.753);
+  border-radius: 5px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086);
+}
+
+.service-container img {
+  margin-top: 5px;
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.service-container p {
+  width: 80%;
+}

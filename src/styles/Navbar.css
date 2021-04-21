@@ -1,0 +1,75 @@
+.sm-scr {
+  display: none;
+}
+
+.lg-scr {
+  display: flex;
+}
+
+.navbar {
+  text-align: center;
+  transition: top 0.6s;
+  z-index: 1;
+  align-items: center;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.92);
+}
+
+.navbar img {
+  max-width: 60px;
+  height: auto;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: honeydew;
+  font-weight: bold;
+  transition: font-size 0.4s;
+}
+
+.navbar a:hover {
+  color: white;
+  font-size: 17px;
+}
+
+.menu-button {
+  position: absolute;
+  right: 25px;
+  cursor: pointer;
+}
+
+.menu-button div {
+  border-radius: 5px;
+  width: 35px;
+  height: 4px;
+  background-color: honeydew;
+  margin: 8px 0;
+}
+
+.drop-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  transition: left 0.6s;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.92);
+  width: 100%;
+  top: 50px;
+}
+
+.divisor {
+  background-color: honeydew;
+  width: 85%;
+}
+
+@media screen and (max-width: 700px) {
+  .lg-scr {
+    display: none;
+  }
+
+  .sm-scr {
+    display: flex;
+  }
+}

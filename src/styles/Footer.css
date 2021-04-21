@@ -1,0 +1,42 @@
+.footer {
+  background: black;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+  font-size: 13px;
+}
+
+.navfoot {
+  font-size: 25px;
+}
+
+.navfoot a {
+  text-decoration: none;
+  color: silver;
+}
+
+.navfoot a:hover {
+  font-weight: bold;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+.flex-elem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  max-width: 50px;
+  max-height: auto;
+}
