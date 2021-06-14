@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/Navbar.css";
-import axios from "axios";
 import { debounce } from "../utilities/helpers";
 
 const Navbar = () => {
   const [prevScroll, setPrevScroll] = useState(0);
   const [visible, setVisible] = useState(true);
   const [dropdown, setDropdown] = useState(false);
-  const [logo, setLogo] = useState("");
 
   const Toggle = () => {
     if (dropdown) {
@@ -31,16 +29,6 @@ const Navbar = () => {
     setPrevScroll(currentScrollPos);
   }, 100);
   useEffect(() => {
-    const GetLogo = async () => {
-      const { data } = await axios.get(
-        "https://rocky-dusk-38121.herokuapp.com/portadas"
-      );
-      setLogo(data[0]);
-      console.log(data);
-    };
-    GetLogo();
-  }, []);
-  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -50,7 +38,10 @@ const Navbar = () => {
   return (
     <div>
       <div className="navbar lg-scr" style={{ top: visible ? "0" : "-60px" }}>
-        <img alt="logo" src={logo.urllogo}></img>
+        <img
+          alt="logo"
+          src="https://lh3.googleusercontent.com/9Hi_SWDZYSD5Jgx1v2I-s2lgwqMYCH6FuL52NYuJY5iht7d68roH1KfvH00qDConzHF5dsmxRys1z3X5UUnwmrEuq0wZbKqZ_D4Q14A"
+        ></img>
         <a href="/#hero">Inicio &nbsp;</a>
         <strong>|</strong>
         <a href="/#about">&nbsp;Biografia&nbsp;</a>
@@ -63,7 +54,10 @@ const Navbar = () => {
         <br></br>
       </div>
       <div className="navbar sm-scr" style={{ top: visible ? "0" : "-60px" }}>
-        <img src={logo.urllogo}></img>
+        <img
+          alt="Company logo"
+          src="https://lh3.googleusercontent.com/9Hi_SWDZYSD5Jgx1v2I-s2lgwqMYCH6FuL52NYuJY5iht7d68roH1KfvH00qDConzHF5dsmxRys1z3X5UUnwmrEuq0wZbKqZ_D4Q14A"
+        ></img>
         <div
           className="drop-menu"
           style={{

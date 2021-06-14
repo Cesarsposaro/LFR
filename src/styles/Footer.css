@@ -2,8 +2,7 @@
   background: black;
   align-items: center;
   justify-content: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px;
 }
 
 .footer p {
@@ -13,7 +12,10 @@
 }
 
 .navfoot {
-  font-size: 25px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navfoot a {
@@ -39,4 +41,10 @@
 .icon {
   max-width: 50px;
   max-height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    flex-direction: column;
+  }
 }

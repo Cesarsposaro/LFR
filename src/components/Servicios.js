@@ -1,20 +1,8 @@
-import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/Servicios.css";
-import axios from "axios";
 
-const Servicios = () => {
-  const [servicios, setServicios] = useState([]);
-  useEffect(() => {
-    const GetServicios = async () => {
-      const { data } = await axios.get(
-        "https://rocky-dusk-38121.herokuapp.com/services"
-      );
-      setServicios(data);
-    };
-    GetServicios();
-  }, []);
-  const showservicios = servicios.map((servicio) => {
+const Servicios = ({ serviceData }) => {
+  const showservicios = serviceData.map((servicio) => {
     return (
       <div
         className="col-xs-12 col-md-3 col-lg-3 service-container"
