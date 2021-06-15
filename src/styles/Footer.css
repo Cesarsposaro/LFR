@@ -43,6 +43,17 @@
   max-height: auto;
 }
 
+@media screen and (max-width: 500px) {
+  .icon {
+    max-width: 50px;
+    max-height: auto;
+  }
+  .logo {
+    max-width: 100px;
+    max-height: auto;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .footer {
     flex-direction: column;
