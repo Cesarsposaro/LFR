@@ -5,7 +5,7 @@ const Servicios = ({ serviceData }) => {
   const showservicios = serviceData.map((servicio) => {
     return (
       <div
-        className="col-xs-12 col-md-3 col-lg-3 service-container"
+        className="col-xs-12 col-md-6 col-lg-4 service-container"
         key={servicio.id}
       >
         <img
@@ -41,10 +41,7 @@ const Servicios = ({ serviceData }) => {
           </p>
         </div>
       </div>
-      <div
-        className="row  container-fluid card-container mx-auto text-center"
-        style={{ width: "100%" }}
-      >
+      <div className="row  container-fluid card-container mx-auto text-center">
         {showservicios}
       </div>
     </div>

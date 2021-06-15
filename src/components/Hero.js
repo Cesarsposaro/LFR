@@ -5,9 +5,12 @@ const Hero = ({ heroData }) => {
   return (
     <div
       id="hero"
-      className="jumbotron jumbotron-fluid hero"
+      className="jumbotron jumbotron-fluid"
       style={{
         background: `url(${heroData.urlbackground})`,
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
       }}
     >
       <div className="container-fluid hero mt-4">

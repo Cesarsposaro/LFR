@@ -7,7 +7,7 @@ const useStrapi = (path) => {
   const [loading, setloading] = useState(true);
   const fetchData = () => {
     axios
-      .get(`https://rocky-dusk-38121.herokuapp.com/${path}`)
+      .get(`http://localhost:1337/${path}`)
       .then((res) => {
         setResponse(res.data);
       })
